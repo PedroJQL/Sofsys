@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-align: center;
+}
+  
+body { 
+    text-align: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(178, 136, 216);
+}
+
+h1 {
+    color: skyblue;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ol {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ol li {
+    margin: 0 15px;
+}
+
+nav ol li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/*------------------------------------------*/ 
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+}
+
+.card h2 {
+    position: relative;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    top: -30px;
+}
+
+.card p {
+    position: relative;
+    font-size: 1.2rem;
+    color: #333;
+    top: -30px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card button{
+    position: relative;
+    top: -15px;
+    width: 80px;
+    height: 25px;
+    border-radius: 0.4rem;
+    background-color: rgb(241, 241, 241);
+    border-color:rgb(240, 240, 240);
+    border: none;
+   z-index: 10;
+}
+
+
+
+@media (max-width: 768px) {
+    .card h2 {
+        position: relative;
+        font-size: 20px;
+        top: -25px;
+    }
+
+    .card p {
+        font-size: 20px;
+    }
+}
