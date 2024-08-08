@@ -10,7 +10,8 @@ body {
     text-align: center;
     padding-bottom: 50px;
 }
-    
+
+
 header {
     position: relative;
     width: 100%;
@@ -90,52 +91,104 @@ h1 {
     border: none;
     z-index: 10;
 }
+
+/*FORMULARIO CONTACTO*/
     
-.comment-section {
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 60px; /* Add padding to prevent overlap */
-}
-    
-.comment-form {
+.contacto{
+    height: 600px;
+    width: 50%;
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    text-align: left;
-}
-    
-.comment-form textarea {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-}
-    
-.comment-form button {
-    background-color: skyblue;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-    
-.comment-form button:hover {
-    background-color: deepskyblue;
 }
 
-footer {
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
+.contenedorContacto{
+    height: 100%;
     width: 100%;
-    text-align: center;
-    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:0.1fr 1fr 0.2fr;
+    grid-template-areas: 
+    "contenedorTitulo"
+    "contenedorInfo"
+    "contenedorEnvio";
+    justify-items: center;
+    row-gap: 10px;
+}
+
+.contenedorTitulo{
+    grid-area: contenedorTitulo;
+}
+
+.contenedorInfo{
+    grid-area: contenedorInfo;
+    height: 100%;
+    width: 80%;
+    /*background-color:#058a8f ;*/
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+}
+
+.contenedorEnvio{
+    grid-area: contenedorEnvio; 
+}
+.contenedorDatos{
+    height: 50%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedorDatosM{
+    height: 100%;
+    width: 80%;
+}
+
+.titulo{
+    color: #000;
+    font-size: auto;
+}
+.inputData{
+    height: 50%;
+    width: 80%;
+    border-bottom: #000;
+    border-radius: 5px;
+    border: none; /* Elimina todos los bordes */
+    border-bottom: 1px solid black; /* Borde inferior negro */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra pequeña */
+    
+}
+.inputMensaje{
+    height: 80%;
+    width: 80%;
+    resize: none;
+    border: none; /* Elimina todos los bordes */
+    border-bottom: 1px solid black; /* Borde inferior negro */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra pequeña */
+}
+.contenedorEnvio{
+    height: 100%;
+    width: 80%;
+/*background-color:#8dd7da ;*/
+    align-content: center;
+}
+.btnEnviar{
+    height: 80%;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.btnEnviar:hover{
+    height: 80%;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    background-color: #11c73b;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.3s;
 }
