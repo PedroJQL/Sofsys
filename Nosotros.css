@@ -68,7 +68,8 @@ h1 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
     width: 300px;
-    text-align: left;
+    text-align: center;
+    padding: 5px ;
 }
     
 .card img {
@@ -100,6 +101,16 @@ h1 {
     background-color: #fff;
     border-radius: 5px;
 }
+
+/*Responsive del formulario de contacto*/
+@media (max-width: 660px) {
+    .contacto{
+        height: 600px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+  }
 
 .contenedorContacto{
     height: 100%;
