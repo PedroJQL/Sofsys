@@ -60,7 +60,10 @@ h1 {
     gap: 20px;
     padding: 20px;
 }
-    
+
+.carousel-inner{
+    background-color: #ccc;
+}
 .card {
     background-color: #fff;
     border-radius: 10px;
