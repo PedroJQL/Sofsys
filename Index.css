@@ -54,7 +54,7 @@ h1 {
 }
 
 .container {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
@@ -65,11 +65,12 @@ h1 {
     background-color: #ccc;
 }
 .card {
+    
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
-    width: 300px;
+    width: 500px;
     text-align: left;
 }
     
