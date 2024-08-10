@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Inicio - Tienda Emyke</title>
     <link rel="stylesheet" href="/Sofsys/css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
         <nav>
             <ol>
-                <li><a href="/Sofsys/Index.html">Inicio</a></li>
+                <li><a href="/Sofsys/index.html">Inicio</a></li>
                 <li><a href="/Sofsys/src/Ofertas.html">Productos</a></li>
                 <li><a href="/Sofsys/src/Categorias.html">Categorias</a></li>
                 <li><a href="/Sofsys/src/Nosotros.html">Nosotros</a></li>
@@ -20,28 +24,58 @@
 
     <h1>Bienvenido a Emyke, tu tienda online</h1>
 
-    <main class="container">
-        <div class="card">
-            <img src="img/pc1.jpg" alt="Imagen 1">
-            <h2>LAPTOP HP 50200</h2>
-            <p>Q4500.00</p>
-        </div>
-        <div class="card">
-            <img src="img/pc2.jpg" alt="Imagen 2">
-            <h2>LENOVO GRIS</h2>
-            <p>Q4500.00</p>
-        </div>
-        <div class="card">
-            <img src="img/pc3.jpg" alt="Imagen 3">
-            <h2>DELL 5060</h2>
-            <p>Q5000.00</p>
-        </div>
-        <div class="card">
-            <img src="img/pc4.jpg" alt="Imagen 4">
-            <h2>HP VICTUS</h2>
-            <p>Q5500.00</p>
-        </div>
+    <main>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="card">
+                            <img src="img/pc1.jpg" alt="Imagen 1">
+                            <h2>LAPTOP HP 5020</h2>
+                            <p>Q4500.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="card">
+                            <img src="img/pc2.jpg" alt="Imagen 2">
+                            <h2>LENOVO GRIS</h2>
+                            <p>Q4500.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="card">
+                            <img src="img/pc3.jpg" alt="Imagen 3">
+                            <h2>DELL 5060</h2>
+                            <p>Q5000.00</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="card">
+                            <img src="img/pc4.jpg" alt="Imagen 4">
+                            <h2>HP VICTUS</h2>
+                            <p>Q5500.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
     </main>
+    
+
 
     <div class="comment-section">
         <form class="comment-form">
@@ -53,5 +87,11 @@
     <footer>
         &copy; 2024 Tienda Emyke. Todos los derechos reservados.
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+   
 </body>
+
 </html>
