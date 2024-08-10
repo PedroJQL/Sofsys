@@ -54,23 +54,19 @@ h1 {
 }
 
 .container {
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px;
 }
-
-.carousel-inner{
-    background-color: #ccc;
-}
-.card {
     
+.card {
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
-    width: 500px;
+    width: 300px;
     text-align: left;
 }
     
