@@ -48,3 +48,32 @@ Cuando hayas terminado tu trabajo en una rama, sigue estos pasos para integrar l
 ## Empuja tu rama al repositorio remoto:
 git push origin feature/nueva-funcionalidad
 
+
+2. Clonación de repositorio 
+   
+   pasos:  
+   ## clonamos el repositorio remoto al local
+          git clone https://github.com/Kristennssen/Sofsys.git
+   ## creamos la rama en nuestro repositorio local
+          git checkout -b rama_cc
+   ## verificamos que se allá creado correctamente
+          git branch 
+   ## nos dirijimos a la carpeta donde fue creada
+          cd /Sofsys
+   ## despues de haber hechos cambios al repositorio realizamos un git add
+          git add . 
+   ## seguidamente de un commit 
+          git commit -m " se clono el repositorio "
+   ## y por ultimo realizamos un push para subir nuestros cambios al repositorio remoto 
+          git push origin rama_cc 
+   ## por ultimo verificamos en github y realizamos un pull request para subir los cambios
+   ## y esperamos a que se realize un merge por parte de los colaboradores o el administardor del repositorio.
+
+3. Deployment en azure 
+   ##  creamos un grupo de recursos en azure 
+   ##  seguidamente se crea una nueva aplicacion web estatica
+   ##  procedemos a agregar nuestra cuenta de github
+   ##  agregamos el repositorio a utilizar
+   ##  procedemos a ubicarnos a la rama a utilizar la cual seria la master
+   ##  creamos la apliacion y esperamos a que realize el workflow  de Actions en github
+   
